@@ -1,0 +1,404 @@
+<html>
+
+<head>
+    <title>Stats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        
+        body{
+            background-image: url(bg1.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            /* background-image: linear-gradient(rgba(30, 30, 85, 0.963),rgba(2, 1, 50, 0.968));
+         */}
+        #stats {
+            transform: scale(1.5);
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            background-color: rgb(27, 27, 119);
+
+            justify-content: space-between;
+            /* align-items: center; */
+            padding: 20px 10px;
+
+
+        }
+
+        img {
+            float: left;
+        }
+
+        .navbar {
+
+            padding-left: 30%;
+            list-style: none;
+
+        }
+
+        .navbar li {
+            font-family: sans-serif;
+            color: white;
+            align-items: center;
+            font-weight: bold;
+            font-size: 15px;
+            font-family: sans-serif;
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px 20px;
+
+        }
+
+        .navbar li:hover {
+            transform: scale(1.2);
+            text-underline-offset: ;
+            transition-duration: 0.5s;
+            text-decoration-line: underline;
+
+            transition-timing-function: ease-in-out;
+        }
+
+        .bats {
+            box-shadow: 5px 3px rgba(11, 3, 3, 0.547);
+            border: 2px solid black;
+            border-radius: 10px;
+            height: 350px;
+            width: 220px;
+        }
+
+        #cap {
+            position: relative;
+            width: 220px;
+            font-size: smaller;
+            height: 20px;
+            background-color: orangered;
+            font-weight: bold;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        #capa {
+            position: relative;
+            width: 220px;
+            font-size: smaller;
+            height: 20px;
+            background-color:purple;
+            font-weight: bold;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        #caap {
+            position: relative;
+            width: 220px;
+            font-size: smaller;
+            height: 20px;
+            background-color: rgb(26, 26, 53);
+            font-weight: bold;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        #kohli {
+            padding-top: 18px;
+            background-color: orange;
+            border-radius: 10px;
+        }
+        #bravo {
+            padding-top: 18px;
+            background-color: rgb(230, 86, 230);
+            border-radius: 10px;
+        }
+        #dhawan {
+            padding-top: 18px;
+            background-color: rgb(39, 39, 92);
+            border-radius: 10px;
+        }
+        .batting{
+          
+        }
+
+        .desc {
+            font-weight: bolder;
+            text-align: center;
+            font-size: large;
+            font-family: sans-serif;
+
+        }
+
+        #runs {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 45px;
+        }
+
+        .rdes {
+            text-align: center;
+            font-weight: bolder;
+            color: grey;
+            font-family: sans-serif;
+            font-size: small;
+        }
+
+        .bats:hover {
+            background-color: black;
+            color: white;
+            transition-duration: .5s;
+            transform: scale(1.02);
+        }
+        footer{
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0e0d0d;
+    /* height: auto; */
+    /* width: 100%; */
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #ede7e7;
+    /* padding: 5rem; */
+}
+.footer-content{
+    display: flex;
+    align-content: center
+    justify-content: center;
+   padding-right: 5rem;
+   text-align: right;
+   /* background-color: aqua; */
+    flex-direction: column;
+    /* width: 100%; */
+    /* padding: left 0; */
+}
+.con{
+   
+    font-size: 1.8rem;
+    font-weight: 400;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.reach{
+    /* padding-right: 5rem; */
+   display: flex;
+   justify-content:center;
+   align-items:center;
+   
+    line-height: 28px;
+    font-size: 14px;
+    width: 100%;
+
+}
+.socials{
+    /* padding-right: 5rem; */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding-right: 3%;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: rgba(211, 211, 211, 0.703);
+}
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <a href="project.htm"> <img src="ipl.png" alt=""></a>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="https://www.cricbuzz.com/cricket-series/5945/indian-premier-league-2023/matches"
+                        target="_blank">MATCHES</a></li>
+                <li id="stats">STATS</li>
+                <li><a href="teams.htm">TEAMS</a></li>
+                <li>NEWS</li>
+                <li><a href="about.htm">ABOUT</a></li>
+                <li><a href="login.htm" target="_blank">SIGN UP</a></li>
+            </ul>
+        </div>
+    </header><br>
+    <h1 style="color: orangered;font-weight: bold;font-family: sans-serif;"><i>All time Batting Leaders</i></h1>
+    <table class="Batting" cellspacing="40px">
+        <tr >
+            <td>
+                <div class="bats">
+                    <div> <img id="kohli" src="Virat Kohli.png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="cap">
+                        <p>&nbsp;Orange Cap</p>
+                    </div><br>
+                    <div class="desc"><i>Virat Kohli </i></div>
+                    <div id="runs">6624</div>
+                    <div class="rdes">RUNS</div>
+
+                </div>
+            </td>
+            <td>
+                <div class="bats">
+                    <div> <img id="dhawan" src="Shikhar Dhawan.png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="caap">
+                        <p>&nbsp;Most Fours</p>
+                    </div><br>
+                    <div class="desc"><i>Shikhar Dhawan  </i></div>
+                    <div id="runs">701</div>
+                    <div class="rdes">FOURS</div>
+
+                </div>
+            </td>
+            <td>
+                <div class="bats">
+                    <div> <img id="dhawan" src="Chris Gayle.png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="caap">
+                        <p>&nbsp;Most Sixes</p>
+                    </div><br>
+                    <div class="desc"><i>Chris Gayle  </i></div>
+                    <div id="runs">357</div>
+                    <div class="rdes">SIXES</div>
+
+                </div>
+            </td>
+            <td>
+                <div class="bats">
+                    <div> <img id="dhawan" src="Chris Gayle.png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="caap">
+                        <p>&nbsp;Highest Score</p>
+                    </div><br>
+                    <div class="desc"><i>Chris Gayle  </i></div>
+                    <div id="runs">175*</div>
+                    <div class="rdes">SCORE</div>
+
+                </div>
+            </td>
+            <td>
+                <div class="bats">
+                    <div> <img id="dhawan" src="Andre Russell.png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="caap">
+                        <p>&nbsp;Best Strike-Rate</p>
+                    </div><br>
+                    <div class="desc"><i>Andre Russell  </i></div>
+                    <div id="runs">177.7</div>
+                    <div class="rdes">Strike Rate</div>
+
+                </div>
+            </td>
+        </tr>
+    </table>
+    <h1 style="color: orangered;font-weight: bold;font-family: sans-serif;"><i>All time Bowling Leaders</i></h1>
+    <table class="Batting" cellspacing="40px">
+        <tr >
+            <td>
+                <div class="bats">
+                    <div> <img id="bravo" src="Dwayne Bravo.png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="capa">
+                        <p>&nbsp;Purple Cap</p>
+                    </div><br>
+                    <div class="desc"><i>Dwayne Bravo</i></div>
+                    <div id="runs">183</div>
+                    <div class="rdes">WICKETS</div>
+
+                </div>
+            </td>
+            <td>
+                <div class="bats">
+                    <div> <img id="dhawan" src="Alzarri Joseph .png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="caap">
+                        <p>&nbsp;Best Bowling Figures</p>
+                    </div><br>
+                    <div class="desc"><i>Alzarri Joseph  </i></div>
+                    <div id="runs">6/12</div>
+                    <div class="rdes"></div>
+
+                </div>
+            </td>
+            <td>
+                <div class="bats">
+                    <div> <img id="dhawan" src="Lungi  Ngidi.png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="caap">
+                        <p>&nbsp;Best Bowling Average</p>
+                    </div><br>
+                    <div class="desc"><i>Lungi Ngidi </i></div>
+                    <div id="runs">17.92</div>
+                    <div class="rdes"></div>
+
+                </div>
+            </td>
+            <td>
+                <div class="bats">
+                    <div> <img id="dhawan" src="Rashid Khan.png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="caap">
+                        <p>&nbsp;Best Economy</p>
+                    </div><br>
+                    <div class="desc"><i>Rashid khan  </i></div>
+                    <div id="runs">6.38</div>
+                    <div class="rdes"></div>
+
+                </div>
+            </td>
+            <td>
+                <div class="bats">
+                    <div> <img id="dhawan" src="Bhuvneshwar Kumar.png" width="220px" height="200px">
+                    </div><br><br><br><br><br><br><br><br><br><br><br>
+                    <div id="caap">
+                        <p>&nbsp;Most Dots</p>
+                    </div><br>
+                    <div class="desc"><i>Bhuvneshwar Kumar </i></div>
+                    <div id="runs">1406</div>
+                    <div class="rdes">DOTS BALLS</div>
+
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <footer>
+       
+        <div class="footer-content">
+            <div class="con">Contact Us</div>
+            <div class="reach" > You can reach out us on</div>
+            <ul class="socials" >
+                <li><a href="https://www.facebook.com/IPL/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/IPL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                
+                <li><a href="https://www.youtube.com/IPL" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://in.linkedin.com/company/indian-premier-league-india" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

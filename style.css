@@ -1,0 +1,17 @@
+p.first{
+    background-color: blue;
+    color: cornsilk;
+    font-weight: bold;
+}
+p.second{
+    background-color: deeppink;
+    color: cyan;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+p.third{
+    background-color: blueviolet;
+    color: honeydew;
+    font-weight: normal;
+    
+}

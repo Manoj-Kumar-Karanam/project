@@ -1,0 +1,236 @@
+<html>
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-image: url(bg1.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            overflow-x: hidden;
+            /* background-image: linear-gradient(rgba(30, 30, 85, 0.963),rgba(2, 1, 50, 0.968));
+         */
+        }
+
+        #stats {
+            transform: scale(1.5);
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            background-color: rgb(27, 27, 119);
+
+            justify-content: space-between;
+            /* align-items: center; */
+            padding: 20px 10px;
+
+
+        }
+
+        img {
+            float: left;
+        }
+
+        .navbar {
+
+            padding-left: 30%;
+            list-style: none;
+
+        }
+
+        .navbar li {
+            font-family: sans-serif;
+            color: white;
+            align-items: center;
+            font-weight: bold;
+            font-size: 15px;
+            font-family: sans-serif;
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px 20px;
+
+        }
+
+        .navbar li:hover {
+            transform: scale(1.2);
+            text-underline-offset: ;
+            transition-duration: 0.5s;
+            text-decoration-line: underline;
+
+            transition-timing-function: ease-in-out;
+        }
+
+        footer {
+
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #0e0d0d;
+            /* height: auto; */
+            /* width: 100%; */
+            font-family: "Open Sans";
+            padding-top: 40px;
+            color: #ede7e7;
+            /* padding: 5rem; */
+        }
+
+        .footer-content {
+            display: flex;
+            align-content: center justify-content: center;
+            padding-right: 5rem;
+            text-align: right;
+            /* background-color: aqua; */
+            flex-direction: column;
+            /* width: 100%; */
+            /* padding: left 0; */
+        }
+
+        .con {
+
+            font-size: 1.8rem;
+            font-weight: 400;
+            width: 100%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        .reach {
+            /* padding-right: 5rem; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            line-height: 28px;
+            font-size: 14px;
+            width: 100%;
+
+        }
+
+        .socials {
+            /* padding-right: 5rem; */
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+            padding-right: 3%;
+        }
+
+        .socials li {
+            margin: 0 10px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .socials a i {
+            font-size: 1.1rem;
+            transition: color .4s ease;
+
+        }
+
+        .socials a:hover i {
+            color: rgba(211, 211, 211, 0.703);
+        }
+
+        .about {
+            width: 100%;
+            height: 100px;
+            border: 2px solid blue;
+            background-image: url(blu.jpg);
+            padding-left: 5%;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .abbout {
+            border: 2px solid none;
+            /* background-color: white;  */
+            display: flex;
+            flex-direction: row;
+            font-family: sans-serif;
+            text-align: center;
+            gap: 3rem;
+            justify-content: center;
+            animation: apear 1s 0.001s ease-in-out forwards;
+        }
+
+        .address {
+            width: 15rem;
+        }
+        @keyframes apear {
+            0%{
+                opacity: 0;
+            }
+           
+            100%{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <a href="project.htm"> <img src="ipl.png" alt=""></a>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="https://www.cricbuzz.com/cricket-series/5945/indian-premier-league-2023/matches"
+                        target="_blank">MATCHES</a></li>
+                <li><a href="stats.htm">STATS</a></li>
+                <li><a href="teams.htm">TEAMS</a></li>
+                <li>NEWS</li>
+                <li id="stats">ABOUT</li>
+                <li><a href="login.htm" target="_blank">SIGN UP</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="about">
+        <h1><i>ABOUT IPL</i></h1>
+    </div>
+    <br><br>
+    <div class="abbout">
+        <div class="address">
+            <h2 style="color: orangered;"><i>About Us</i></h2>
+            <h4>Address:</h4>
+            <div>BCCI-IPL 4th Floor, Cricket Centre. Wankhede Stadium 'D' Road, Churchgate Mumbai - 400020 India</div>
+        </div>
+        <div class="contact">
+            <h2>Contact Us:</h2>
+            <p>+91 22 22800300</p>
+            <p>+91 22 22800354</p>
+            <p>+91 22 61580300</p>
+        </div>
+    </div>
+    <br><br>
+    <footer>
+       
+        <div class="footer-content">
+            <div class="con">Contact Us</div>
+            <div class="reach" > You can reach out us on</div>
+            <ul class="socials" >
+                <li><a href="https://www.facebook.com/IPL/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/IPL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                
+                <li><a href="https://www.youtube.com/IPL" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://in.linkedin.com/company/indian-premier-league-india" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
