@@ -1,0 +1,138 @@
+<html>
+    <head><title>Login</title>
+    <style>
+
+        *{
+            font-family:sans-serif
+        }
+        body{
+            background-image: url(bg.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .box{
+            display: flex;
+            padding-bottom: 20%;
+            justify-content: center;
+            align-items: center;
+            min-height: 90vh;
+        }
+        .container{
+            width:350px;
+            
+            display: flex;
+            height: 350px;
+            background-color: black;
+            border-radius: 10px;
+            flex-direction: column;
+            padding: 10px 0 10px 0;
+
+        }
+        header{
+            color: white;
+            font-size: 30px;
+            display:flex;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+        .input-field{
+            padding-top: 5%;
+            padding-left: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+        .text{
+            height: 45px;
+            width: 86%;
+            border: none;
+            outline: none;
+            border-radius: 30px;
+            color: white;
+            padding: 0 0 0 45px;
+            background: rgba(255,255,255,0.1);
+
+        }
+        ::-webkit-input-placeholder{
+            color: white;
+        }
+        .submit{
+            border:none;
+            border-radius: 30px;
+            font-size: 15px;
+            height: 45px;
+            outline: none;
+            width:86%;
+            background: rgba(255,255,255,0.7);
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit:hover{
+            box-shadow: 1px 5px 7 1px black;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: small;
+            color:white;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function validate()
+        {
+            var a;
+            var b;
+            a=document.getElementById("uname").value
+            if(a=="")
+            {
+                alert("User name should not be empty!!")
+                return 0;
+            }
+            
+            b=document.getElementById("mail").value
+            if(b=="")
+            {
+                alert("Mail Address should not be empty!!")
+            }
+            alert("Successfully registered!!")
+            location.reload();
+        }
+    </script>
+</head>
+
+<body>
+    <h1 style="color: black;font-weight: bold;text-align: center;text-decoration: wavy;padding-top: 5%;"><i>Sign-Up and create an account for latest updates </i></h1>
+    <div class="box">
+        <div class="container">
+            <div class="top">
+                <center><span style="color:white;font-size: large;">Have an account?</span></center>
+                <header style="color: white;">Sign-Up</header>
+            </div>
+
+            <div class="input-field">
+                <input type="text" id="uname" class="text" placeholder="Username" required>
+            </div>
+            <br>
+            <div class="input-field">
+                <input type="text" id="mail" class="text" placeholder="E-mail Address" required>
+            </div>
+            <br>
+            <div class="input-field">
+                <input type="submit" class="submit" value="Sign-Up" onclick="validate()">
+            </div>
+
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember Me</label>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+    </html>
